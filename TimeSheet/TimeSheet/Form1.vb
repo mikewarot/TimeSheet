@@ -9,19 +9,15 @@
 
     End Sub
 
-    Private Sub BindingSource1_CurrentChanged(sender As Object, e As EventArgs) Handles BindingSource1.CurrentChanged
+    Private Sub BindingSource1_CurrentChanged(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'TimeSheetDataSet.Users' table. You can move, or remove it, as needed.
-        Me.UsersTableAdapter.Fill(Me.TimeSheetDataSet.Users)
-        'TODO: This line of code loads data into the 'TimeSheetDataSet.Users' table. You can move, or remove it, as needed.
-        Me.UsersTableAdapter.Fill(Me.TimeSheetDataSet.Users)
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 End Class
