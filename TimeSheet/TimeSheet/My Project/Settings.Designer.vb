@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("TimeSheetConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.2.148\SQLEXPRESS;Initial Catalog=TimeSheet;Persist Security I"& _ 
+            "nfo=True;User ID=mike;Password=tempest")>  _
+        Public ReadOnly Property ConnectionString() As String
+            Get
+                Return CType(Me("ConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
