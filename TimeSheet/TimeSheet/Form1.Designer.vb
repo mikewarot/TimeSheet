@@ -29,18 +29,18 @@ Partial Class Form1
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutThisProgramToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TimeSheetDataSet = New TimeSheet.TimeSheetDataSet()
-        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.UsersTableAdapter = New TimeSheet.TimeSheetDataSetTableAdapters.UsersTableAdapter()
         Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PhoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TimeSheetDataSet = New TimeSheet.TimeSheetDataSet()
+        Me.UsersTableAdapter = New TimeSheet.TimeSheetDataSetTableAdapters.UsersTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TimeSheetDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TimeSheetDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -89,20 +89,6 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(523, 115)
         Me.DataGridView1.TabIndex = 1
         '
-        'TimeSheetDataSet
-        '
-        Me.TimeSheetDataSet.DataSetName = "TimeSheetDataSet"
-        Me.TimeSheetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'UsersBindingSource
-        '
-        Me.UsersBindingSource.DataMember = "Users"
-        Me.UsersBindingSource.DataSource = Me.TimeSheetDataSet
-        '
-        'UsersTableAdapter
-        '
-        Me.UsersTableAdapter.ClearBeforeFill = True
-        '
         'UserIDDataGridViewTextBoxColumn
         '
         Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "UserID"
@@ -134,6 +120,20 @@ Partial Class Form1
         Me.EmailDataGridViewTextBoxColumn.HeaderText = "Email"
         Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
         '
+        'UsersBindingSource
+        '
+        Me.UsersBindingSource.DataMember = "Users"
+        Me.UsersBindingSource.DataSource = Me.TimeSheetDataSet
+        '
+        'TimeSheetDataSet
+        '
+        Me.TimeSheetDataSet.DataSetName = "TimeSheetDataSet"
+        Me.TimeSheetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UsersTableAdapter
+        '
+        Me.UsersTableAdapter.ClearBeforeFill = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -147,8 +147,8 @@ Partial Class Form1
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TimeSheetDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TimeSheetDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

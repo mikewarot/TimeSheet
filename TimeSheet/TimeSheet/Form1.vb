@@ -16,4 +16,11 @@
 
     End Sub
 
+    Private Sub DataGridView1_RowLeave(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.RowLeave
+
+    End Sub
+
+    Private Sub DataGridView1_Leave(sender As Object, e As EventArgs) Handles DataGridView1.Leave
+        UsersTableAdapter.Update(Me.TimeSheetDataSet)
+    End Sub
 End Class
